@@ -1,0 +1,31 @@
+### Criar um produto
+
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+    "name": "Notebook i9",
+    "price": 3200
+}
+
+### Recebe todos os produtos
+
+GET http://localhost:3000/produtos
+
+### Pega um único produto pelo UUID
+
+GET http://localhost:3000/produtos/587ff931-284c-4a5e-9629-02f4de86d2f5
+
+### Altera o produto pelo UUID
+
+PUT http://localhost:3000/produtos/587ff931-284c-4a5e-9629-02f4de86d2f5
+Content-Type: application/json
+
+{
+    "name": "Notebook i3",
+    "price": 1500
+}
+
+### Deleta um produto pelo UUID
+
+DELETE http://localhost:3000/produtos/165444c1-97f4-436c-a2fa-241e0ec03e7b
